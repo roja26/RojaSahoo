@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RojaSahoo/static/css/main.ec524e10.css",
-    "main.js": "/RojaSahoo/static/js/main.d187cff5.js",
-    "static/js/453.15a626a8.chunk.js": "/RojaSahoo/static/js/453.15a626a8.chunk.js",
-    "static/media/back.png": "/RojaSahoo/static/media/back.fc8582ef7dbfd648cdfa.png",
-    "index.html": "/RojaSahoo/index.html",
-    "main.ec524e10.css.map": "/RojaSahoo/static/css/main.ec524e10.css.map",
-    "main.d187cff5.js.map": "/RojaSahoo/static/js/main.d187cff5.js.map",
-    "453.15a626a8.chunk.js.map": "/RojaSahoo/static/js/453.15a626a8.chunk.js.map"
+    "main.css": "/static/css/main.ec524e10.css",
+    "main.js": "/static/js/main.077e7a67.js",
+    "static/js/453.15a626a8.chunk.js": "/static/js/453.15a626a8.chunk.js",
+    "static/media/back.png": "/static/media/back.fc8582ef7dbfd648cdfa.png",
+    "index.html": "/index.html",
+    "main.ec524e10.css.map": "/static/css/main.ec524e10.css.map",
+    "main.077e7a67.js.map": "/static/js/main.077e7a67.js.map",
+    "453.15a626a8.chunk.js.map": "/static/js/453.15a626a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec524e10.css",
-    "static/js/main.d187cff5.js"
+    "static/js/main.077e7a67.js"
   ]
 }
