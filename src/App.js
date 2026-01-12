@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Camera, Focus, Code, BookOpen, Briefcase, Github, Linkedin, Mail, ExternalLink} from 'lucide-react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Camera, Code, BookOpen, Briefcase, Github, Linkedin, Mail, ExternalLink} from 'lucide-react';
 import doodleImage from './back.png';
 
 const Portfolio = () => {
@@ -9,14 +9,16 @@ const Portfolio = () => {
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef(null);
 
-  const handleSpotlightDrag = (e) => {
+  const handleSpotlightDrag = useCallback((e) => {
     if (!isDragging) return;
-    
-    const x = ((e.clientX || e.touches?.[0]?.clientX) / window.innerWidth) * 100;
-    const y = ((e.clientY || e.touches?.[0]?.clientY) / window.innerHeight) * 100;
-    
+
+    const x =
+      ((e.clientX || e.touches?.[0]?.clientX) / window.innerWidth) * 100;
+    const y =
+      ((e.clientY || e.touches?.[0]?.clientY) / window.innerHeight) * 100;
+
     setSpotlightPos({ x, y });
-  };
+  }, [isDragging]);
 
   const handleMouseDown = (e) => {
     if (activeSection === 'landing') {
@@ -46,7 +48,7 @@ const Portfolio = () => {
         window.removeEventListener('touchend', handleUp);
       };
     }
-  }, [isDragging]);
+  }, [isDragging, handleSpotlightDrag]);
 
   const projects = [
     {
