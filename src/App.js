@@ -129,9 +129,15 @@ const Portfolio = () => {
   const publications = [
     {
       title: "Fusion2Print: Deep Flash-Non-Flash Fusion for Contactless Fingerprint Matching",
-      venue: "Under Review at ICPR 2026",
+      venue: "Accepted at ICPR 2026",
       year: "Jan 2026",
       link: "https://arxiv.org/abs/2601.02318"
+    },
+    {
+      title: "Illumination-Aware Contactless Fingerprint Spoof Detection via Paired Flash-Non-Flash Imaging",
+      venue: "Accepted at IWBF 2026",
+      year: "Mar 2026",
+      link: "https://arxiv.org/abs/2603.17679"
     },
   ];
 
